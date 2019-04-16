@@ -5,11 +5,10 @@ USER root
 RUN apt-get update && apt-get install -y \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 
-RUN npm install -g elm elm-live
-
 USER gitpod
 # Apply user-specific settings
 
+RUN npm install -g elm elm-live
 ENV DIDIWORK=TRUE
 
 # Give back control
