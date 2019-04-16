@@ -10,5 +10,7 @@ RUN npm install -g elm elm-live
 USER gitpod
 # Apply user-specific settings
 
+ENV DIDIWORK=TRUE
+
 # Give back control
 USER root
