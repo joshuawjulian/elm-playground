@@ -1,0 +1,21 @@
+{
+  "name": "elm-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/joshuawjulian/elm-playground.git",
+  "author": "Joshua W Julian <joshuawjulian@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "jest",
+    "make": "elm make src/Main.elm --output=elm.js",
+    "live": "elm-live src/Main.elm -- --output=main.js"
+  },
+  "dependencies": {
+    "elm": "^0.19.0-bugfix6"
+  },
+  "devDependencies": {
+    "elm-live": "^3.4.0",
+    "elm-format": "^0.8.1"
+  }
+}
